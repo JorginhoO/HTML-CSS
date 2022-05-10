@@ -3,16 +3,29 @@
 
 * {
     box-sizing: border-box;
-    font-family: 'Open sans',sans-serif;
-    
+    font-family: 'Open Sans',sans-serif;
+}
+
+:root{
+    --bg-gray: #e8e8e8;
+    --color-primary: #4D41C0;
+    --white: #fff;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
 }
 
 html, body{
-    background-color: #e8e8e8;
+    background-color: var(--bg-gray);
 }
 
 header{
-    background-color: #4D41C8;
+    background-color: var(--color-primary);
+    color: var(--white);
+    height: 60px;
+    display: flex;
+    align-items: center;
     
 }
 
@@ -22,7 +35,26 @@ nav {
     justify-content: space-between;
 }
 
-a, a:hover{
+nav h1{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a{
+    font-size: 12px;
+    font-weight: 400;
+}
+
+ a, a:hover{
     text-decoration: none;
     color: unset;
+}
+
+.dragonmovie-contact-container{
+    display: flex;
+    align-items: center;
+}
+
+.dragonmovie-contact-container img{
+    margin-right: 10px;
 }
